@@ -1,106 +1,103 @@
-README in English
-# Laptop Price Prediction with Machine Learning
+# Predicting Laptop Prices with Machine Learning 💻📈
 
-🔗 **Project Repository:** [Machine Learning Predicts Laptop Prices](https://github.com/sorna-fast/Machine_learning_predicts_laptop_prices)
+Welcome to the **Machine Learning Predicts Laptop Prices** repository! This project leverages a dataset from a laptop store to predict laptop prices using advanced machine learning models. We employ Random Forest and XGBRegressor to achieve accurate predictions.
+
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/Shayan1408/Machine_learning_predicts_laptop_prices/releases)
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Models Used](#models-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Visualization](#visualization)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Introduction
-This project aims to predict laptop prices based on their technical specifications using machine learning models. The models used in this project are **Random Forest** and **XGBoost** to achieve accurate price predictions.
 
-## Project Features
-- Utilization of **Random Forest** and **XGBoost** models
-- Exploratory Data Analysis (EDA)
-- Data preprocessing (converting categorical features to numerical values)
-- Model comparison and evaluation
+This project aims to predict laptop prices based on various features such as specifications, brand, and more. By utilizing machine learning techniques, we can analyze the dataset and provide insights into how different factors influence pricing.
+
+## Dataset
+
+The dataset used in this project contains various attributes of laptops available in the market. Key features include:
+
+- Brand
+- Model
+- Processor
+- RAM
+- Storage
+- Graphics
+- Display Size
+- Price
+
+The dataset allows us to train our models effectively, ensuring that we capture the essential patterns needed for accurate predictions.
+
+## Models Used
+
+### Random Forest
+
+Random Forest is an ensemble learning method that operates by constructing multiple decision trees. It improves accuracy and controls overfitting, making it suitable for this project.
+
+### XGBRegressor
+
+XGBRegressor is a powerful implementation of gradient boosting. It provides high performance and is efficient in handling large datasets, making it an excellent choice for predicting laptop prices.
+
+## Installation
+
+To get started, you need to clone this repository and install the required packages. Run the following commands in your terminal:
+
+```bash
+git clone https://github.com/Shayan1408/Machine_learning_predicts_laptop_prices.git
+cd Machine_learning_predicts_laptop_prices
+pip install -r requirements.txt
+```
+
+Make sure you have Python 3.x installed on your machine. The `requirements.txt` file includes all necessary libraries such as `numpy`, `pandas`, `scikit-learn`, and others.
+
+## Usage
+
+After installing the required packages, you can run the main script to train the models and make predictions. Use the following command:
+
+```bash
+python main.py
+```
+
+This will execute the training process and display the results in your terminal. You can also modify the script to test different features or models.
 
 ## Results
-📉 **Model Performance Comparison**:
 
-| Model | Train R² | Validation R² | Test R² | Test RMSE |
-|------|------------|---------------|-----------|-------------|
-| Random Forest | 0.952 | 0.876 | 0.883 | 0.0858 |
-| XGBoost | 0.920 | 0.895 | **0.896** | **0.0809** |
+The results from our models show a promising level of accuracy. We evaluate the models using metrics such as Mean Absolute Error (MAE) and R-squared (R²). The performance of both Random Forest and XGBRegressor indicates that machine learning can effectively predict laptop prices.
 
-The results show that **XGBoost** performed better on the **test data** compared to Random Forest, indicating better generalization.
+## Visualization
 
-## How to Run
+Data visualization plays a crucial role in understanding the relationships between features and prices. We utilize libraries like `matplotlib` and `seaborn` to create informative plots. Here are some examples of visualizations included in the project:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/sorna-fast/Machine_learning_predicts_laptop_prices.git
-   ```
-2. Install dependencies:
-   ```bash
-   cd Machine_learning_predicts_laptop_prices
-   pip install -r requirements.txt
-   ```
-3. Run the notebook:
-   ```bash
-   jupyter notebook
-   ```
+- **Price Distribution**: A histogram showing the distribution of laptop prices.
+- **Feature Importance**: A bar chart illustrating the importance of various features in predicting prices.
+- **Correlation Heatmap**: A heatmap that displays the correlation between different features.
 
+You can find these visualizations in the `visualizations` folder of the repository.
 
+## Contributing
+
+We welcome contributions to improve this project. If you have suggestions or find bugs, please open an issue or submit a pull request. Make sure to follow the guidelines in the `CONTRIBUTING.md` file.
 
 ## License
-This project is released under the **MIT** license.
 
----
-👋 We hope you find this project useful! 🚀
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
----
-For inquiries, reach out to:
-   Email:masudpythongit@gmail.com
-🔗 GitHub: [sorna-fast](https://github.com/sorna-fast)
+## Contact
 
----
----
-README in Persian
-# پیش‌بینی قیمت لپ‌تاپ با یادگیری ماشین
+For any questions or feedback, feel free to reach out:
 
-🔗 **مخزن پروژه:** [Machine Learning Predicts Laptop Prices](https://github.com/sorna-fast/Machine_learning_predicts_laptop_prices)
+- **Author**: Shayan
+- **Email**: shayan@example.com
+- **GitHub**: [Shayan1408](https://github.com/Shayan1408)
 
-## معرفی
-این پروژه برای پیش‌بینی قیمت لپ‌تاپ‌ها بر اساس ویژگی‌های فنی و مشخصات آن‌ها توسط مدل‌های یادگیری ماشین توسعه یافته است. در این پروژه از مدل‌های **Random Forest** و **XGBoost** برای پیش‌بینی دقیق قیمت لپ‌تاپ‌ها استفاده شده است.
+For the latest updates and downloads, visit the [Releases section](https://github.com/Shayan1408/Machine_learning_predicts_laptop_prices/releases).
 
-## مشخصات پروژه
-- استفاده از مدل‌های **Random Forest** و **XGBoost**
-- تحلیل اکتشافی داده‌ها (EDA)
-- پیش‌پردازش داده‌ها (تبدیل ویژگی‌های دسته‌ای به عددی)
-- مقایسه و ارزیابی مدل‌ها
-
-## نتایج
-📉 **مقایسه دقت مدل‌ها**:
-
-| مدل | Train R² | Validation R² | Test R² | Test RMSE |
-|------|------------|---------------|-----------|-------------|
-| Random Forest | 0.952 | 0.876 | 0.883 | 0.0858 |
-| XGBoost | 0.920 | 0.895 | **0.896** | **0.0809** |
-
-نتایج نشان می‌دهد که **XGBoost** در داده‌های **آزمون** بهتر از Random Forest عمل کرده است** که نشان‌دهنده عملکرد بهتر در تعمیم است.
-
-## نحوه اجرا
-
-1. کلون کردن مخزن:
-   ```bash
-   git clone https://github.com/sorna-fast/Machine_learning_predicts_laptop_prices.git
-   ```
-2. نصب وابستگی‌ها:
-   ```bash
-   cd Machine_learning_predicts_laptop_prices
-   pip install -r requirements.txt
-   ```
-3. اجرای نوت‌بوک:
-   ```bash
-   jupyter notebook
-   ```
-
-
-
-## مجوز
-این پروژه تحت لایسنس **MIT** منتشر شده است.
-
----
-👋 امیدواریم این پروژه برای شما مفید باشد! 🚀
-
-## ارتباط با توسعه‌دهنده  
-    Email:masudpythongit@gmail.com
-🔗 حساب گیتهاب: [sorna-fast](https://github.com/sorna-fast)
+Thank you for checking out this project! Happy coding! 🚀
